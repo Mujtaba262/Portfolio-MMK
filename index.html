@@ -109,18 +109,29 @@
 
 <!-- NAVIGATION -->
 <nav class="nav">
-  <a href="#home" class="logo">
-    <span class="logo-dot"></span>
-    MMK<span style="color:var(--ink-dim)">.dev</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="#home" class="logo">
+            <span class="logo-dot"></span>
+            <span class="logo-text">MMK.dev</span>
+        </a>
+ 
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+ 
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
-
 <!-- HOME -->
 <section id="home">
   <div class="container">
@@ -147,7 +158,7 @@
         </div>
 
         <div class="cta-row rise d-5">
-          <a class="cta" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something&body=Hi%20Mujtaba%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AProject%20type%3A%20%0ATimeline%3A%20%0ABudget%3A%20%0A%0ADetails%3A%0A%0AThanks%21">
+          <a class="cta" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something&body=Hi%20Mujtaba%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project%20with%20you.">
             Hire Me Now <span class="arrow">→</span>
           </a>
           <a class="cta-ghost" href="#projects">View My Work</a>
@@ -157,32 +168,12 @@
       <!-- 3D Card -->
       <div class="card-wrap rise d-3">
         <div class="card" id="tiltCard">
-          <div class="card-face">
-            <div class="card-grid"></div>
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="card-glow"></div>
-            <span class="tick t-tl"></span><span class="tick t-tr"></span>
-            <span class="tick t-bl"></span><span class="tick t-br"></span>
-            <div class="card-header">
-              <div class="id-tag">ID · <span>#MMK—026</span><br/>Frontend / UI</div>
-              <div class="sig">Mujtaba</div>
-            </div>
-            <div class="card-center">
-              <div class="initials">MK</div>
-              <div class="full-name">Mohammad Mujtaba Khan</div>
-              <div class="skills">
-                <span class="chip c-1">HTML</span>
-                <span class="chip c-2">CSS</span>
-                <span class="chip c-3">JavaScript</span>
-                <span class="chip">UI / UX</span>
-                <span class="chip">Responsive</span>
-              </div>
-            </div>
-            <div class="card-footer">
-              <div>Specialty<span class="val">Web Interfaces</span></div>
-              <div style="text-align:right">Status<span class="val" style="color:var(--accent)">● Open</span></div>
-            </div>
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-icon">🚀</div>
+            <h2>Building Digital Dreams</h2>
+            <p>Transforming visions into pixel-perfect realities with modern web technologies.</p>
+            <div class="card-badge">React • Figma • Web Design</div>
           </div>
         </div>
       </div>
@@ -190,92 +181,24 @@
   </div>
 </section>
 
-<div class="section-divider">· · · 02 — About · · ·</div>
+<div class="section-divider">· · · 01 — Projects · · ·</div>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="reveal">
-        <div class="section-label">About</div>
-        <h2 class="heading">Crafting the web, <span class="italic">one pixel at a time.</span></h2>
-        <div class="about-text">
-          <p>Hi — I'm <strong>Mohammad Mujtaba Khan</strong>, a frontend developer and digital craftsman who believes that great code and great design aren't opposites. They're partners that elevate user experiences.</p>
-          <p>I build <strong>fast, responsive, and beautifully crafted</strong> websites that turn ideas into digital experiences. From sleek landing pages to full interactive interfaces, every project gets my full attention — clean markup, thoughtful animations, optimized performance, and pixel-perfect design across every device and screen size.</p>
-          <p>With 3+ years of professional experience, I've delivered 50+ successful projects to satisfied clients worldwide. My focus is on creating solutions that not only look stunning but also drive real business results through improved user engagement, conversion optimization, and performance excellence.</p>
-        </div>
-
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num">50+</div>
-            <div class="stat-label">Projects Delivered</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">3+</div>
-            <div class="stat-label">Years Experience</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">100%</div>
-            <div class="stat-label">Client Satisfaction</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal">
-        <div class="section-label">Toolkit</div>
-        <div class="skill-list">
-          <div class="skill-row">
-            <span class="skill-name">HTML5</span>
-            <span class="skill-bar" style="--fill:98%"></span>
-            <span class="skill-pct">98%</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">CSS3</span>
-            <span class="skill-bar" style="--fill:95%"></span>
-            <span class="skill-pct">95%</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">JavaScript</span>
-            <span class="skill-bar" style="--fill:90%"></span>
-            <span class="skill-pct">90%</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">UI / UX</span>
-            <span class="skill-bar" style="--fill:88%"></span>
-            <span class="skill-pct">88%</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">Responsive Design</span>
-            <span class="skill-bar" style="--fill:96%"></span>
-            <span class="skill-pct">96%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider">· · · 03 — Projects · · ·</div>
-
-<!-- PROJECTS -->
+<!-- PROJECTS SECTION -->
 <section id="projects">
   <div class="container">
-    <div class="reveal">
-      <div class="section-label">Portfolio</div>
-      <h2 class="heading">Featured <span class="italic">work & projects.</span></h2>
-      <p class="projects-intro">Each project crafted with precision, performance, and passion. From concept to deployment — excellence in every line of code.</p>
-    </div>
-
+    <div class="section-label">Projects</div>
+    <h2 class="heading">Crafted Works</h2>
+    
     <div class="projects-grid">
-      <!-- Project 1: Apexcify Technology -->
+      <!-- Project 1 -->
       <div class="project-card reveal">
         <div class="project-image">
-          <div class="image-placeholder apexcify">
+          <div class="image-placeholder">
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#c6ff3d;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#6d5dfc;stop-opacity:1" />
+                  <stop offset="0%" style="stop-color:#a47251;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#dd9e59;stop-opacity:1" />
                 </linearGradient>
               </defs>
               <rect width="400" height="300" fill="#0a0d16" opacity="0.5"/>
@@ -283,69 +206,32 @@
                 <rect x="0" y="0" width="100" height="100" rx="8" fill="url(#grad1)" opacity="0.8"/>
                 <text x="50" y="60" font-size="40" font-weight="bold" fill="#05060a" text-anchor="middle" font-family="Arial">A</text>
               </g>
-              <text x="200" y="200" font-size="28" font-weight="bold" fill="#c6ff3d" text-anchor="middle" font-family="Arial">Apexcify Technology</text>
-              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Corporate Website & Services Portal</text>
+              <text x="200" y="200" font-size="28" font-weight="bold" fill="#a47251" text-anchor="middle" font-family="Arial">Apexcify</text>
+              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Corporate Website</text>
             </svg>
           </div>
         </div>
         <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Apexcify Technology</h3>
-            <span class="project-badge">Corporate</span>
-          </div>
-          <p class="project-description">Professional corporate website for a leading tech company. Built with modern design principles, responsive layout, and optimized performance. Features dynamic service showcase, client testimonials, and conversion-optimized contact forms. Increased client conversions by 45% with improved UI/UX.</p>
-          
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Responsive Design</span>
-            <span class="tech-tag">SEO Optimized</span>
-            <span class="tech-tag">Performance</span>
-          </div>
-
           <div class="project-actions">
-            <a href="https://github.com/Mujtaba262/ApexcifyTechnologys_Website.git" target="_blank" class="project-btn github">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://stellar-gumption-c2fc28.netlify.app/" target="_blank" class="project-btn live">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Preview
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
-          </div>
-
-          <div class="project-review">
-            <div class="review-header">
-              <div class="review-author">
-                <div class="avatar" style="background:linear-gradient(135deg, #c6ff3d, #6d5dfc)">AS</div>
-                <div class="author-info">
-                  <div class="author-name">Abdul Samad</div>
-                  <div class="author-role">CEO, Apexcify Technology</div>
-                </div>
-              </div>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-            </div>
-            <p class="review-text">"Mujtaba's work exceeded our expectations in every way. The website is visually stunning, performs exceptionally fast, and our conversion rates increased significantly. His attention to detail and commitment to quality is outstanding. He's a true professional and asset to any project!"</p>
           </div>
         </div>
       </div>
 
-      <!-- Project 2: Sidcup Family Golf -->
+      <!-- Project 2 -->
       <div class="project-card reveal">
         <div class="project-image">
-          <div class="image-placeholder sidcup">
+          <div class="image-placeholder">
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#ff4dcb;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#c6ff3d;stop-opacity:1" />
+                  <stop offset="0%" style="stop-color:#dd9e59;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#f0d8a1;stop-opacity:1" />
                 </linearGradient>
               </defs>
               <rect width="400" height="300" fill="#0a0d16" opacity="0.5"/>
@@ -353,69 +239,32 @@
                 <circle cx="25" cy="25" r="20" fill="url(#grad2)" opacity="0.8"/>
                 <circle cx="25" cy="25" r="10" fill="#05060a"/>
               </g>
-              <text x="200" y="200" font-size="28" font-weight="bold" fill="#ff4dcb" text-anchor="middle" font-family="Arial">Sidcup Family Golf</text>
-              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Interactive Golf Course Website</text>
+              <text x="200" y="200" font-size="28" font-weight="bold" fill="#dd9e59" text-anchor="middle" font-family="Arial">Golf Course</text>
+              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Interactive Website</text>
             </svg>
           </div>
         </div>
         <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Sidcup Family Golf</h3>
-            <span class="project-badge">Entertainment</span>
-          </div>
-          <p class="project-description">Interactive and engaging golf course website with stunning visuals and smooth animations. Features course information, member booking system, facility showcase, and testimonials. Built with focus on user experience and conversion optimization. Booking inquiries increased by 60% post-launch.</p>
-          
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Smooth Animations</span>
-            <span class="tech-tag">Interactive UI</span>
-            <span class="tech-tag">Mobile Optimized</span>
-          </div>
-
           <div class="project-actions">
-            <a href="https://github.com/Mujtaba262/Sidcup-Family-Golf.git" target="_blank" class="project-btn github">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://monumental-salamander-c0fa89.netlify.app/" target="_blank" class="project-btn live">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Preview
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
-          </div>
-
-          <div class="project-review">
-            <div class="review-header">
-              <div class="review-author">
-                <div class="avatar" style="background:linear-gradient(135deg, #ff4dcb, #c6ff3d)">AS</div>
-                <div class="author-info">
-                  <div class="author-name">Abdul Samad</div>
-                  <div class="author-role">Golf Course Manager</div>
-                </div>
-              </div>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-            </div>
-            <p class="review-text">"The interactive golf website Mujtaba created is absolutely brilliant! The animations are smooth and captivating, the design is modern and professional, and the booking system works flawlessly. Our members love navigating it. Mujtaba is a true master of his craft!"</p>
           </div>
         </div>
       </div>
 
-      <!-- Project 3: E-Commerce Platform -->
+      <!-- Project 3 -->
       <div class="project-card reveal">
         <div class="project-image">
-          <div class="image-placeholder ecommerce">
+          <div class="image-placeholder">
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#6d5dfc;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#ff4dcb;stop-opacity:1" />
+                  <stop offset="0%" style="stop-color:#f0d8a1;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#dcf0c3;stop-opacity:1" />
                 </linearGradient>
               </defs>
               <rect width="400" height="300" fill="#0a0d16" opacity="0.5"/>
@@ -423,208 +272,142 @@
                 <rect x="0" y="0" width="60" height="60" rx="4" fill="url(#grad3)" opacity="0.8"/>
                 <text x="30" y="40" font-size="24" font-weight="bold" fill="#05060a" text-anchor="middle" font-family="Arial">🛍</text>
               </g>
-              <text x="200" y="200" font-size="28" font-weight="bold" fill="#6d5dfc" text-anchor="middle" font-family="Arial">E-Commerce Store</text>
-              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Product Showcase & Shopping Cart</text>
+              <text x="200" y="200" font-size="28" font-weight="bold" fill="#f0d8a1" text-anchor="middle" font-family="Arial">E-Commerce</text>
+              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Shopping Platform</text>
             </svg>
           </div>
         </div>
         <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Premium E-Commerce Store</h3>
-            <span class="project-badge">E-Commerce</span>
-          </div>
-          <p class="project-description">Full-featured e-commerce platform with product catalog, shopping cart, and checkout functionality. Implemented modern UI patterns, smooth product filtering, and optimized search experience. Integrated payment gateway and inventory management system. Sales increased by 85% within first month.</p>
-          
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Payment Integration</span>
-            <span class="tech-tag">Product Filtering</span>
-            <span class="tech-tag">Cart Management</span>
-          </div>
-
           <div class="project-actions">
-            <a href="#" target="_blank" class="project-btn github">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="#" target="_blank" class="project-btn live">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Preview
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
-          </div>
-
-          <div class="project-review">
-            <div class="review-header">
-              <div class="review-author">
-                <div class="avatar" style="background:linear-gradient(135deg, #6d5dfc, #ff4dcb)">PK</div>
-                <div class="author-info">
-                  <div class="author-name">Pakari Khan</div>
-                  <div class="author-role">Store Owner, Fashion Brand</div>
-                </div>
-              </div>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-            </div>
-            <p class="review-text">"Mujtaba's e-commerce platform transformed our online business completely! The user interface is intuitive, checkout process is seamless, and our sales skyrocketed by 85%. His technical expertise combined with design sense is exactly what we needed. Absolutely fantastic work!"</p>
           </div>
         </div>
       </div>
 
-      <!-- Project 4: Travel Blog Website -->
+      <!-- Project 4 -->
       <div class="project-card reveal">
         <div class="project-image">
-          <div class="image-placeholder travel">
+          <div class="image-placeholder">
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#c6ff3d;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#ff4dcb;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-              <rect width="400" height="300" fill="#0a0d16" opacity="0.5"/>
-              <g transform="translate(140, 80)">
-                <polygon points="60,0 120,45 120,135 60,180 0,135 0,45" fill="url(#grad4)" opacity="0.8"/>
-                <text x="60" y="100" font-size="32" font-weight="bold" fill="#05060a" text-anchor="middle" font-family="Arial">✈</text>
-              </g>
-              <text x="200" y="200" font-size="28" font-weight="bold" fill="#c6ff3d" text-anchor="middle" font-family="Arial">Travel Stories</text>
-              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Adventure Blog & Destination Guide</text>
-            </svg>
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Travel Stories Blog</h3>
-            <span class="project-badge">Blog/Content</span>
-          </div>
-          <p class="project-description">Beautiful travel blog platform with immersive storytelling layout. Features high-quality image galleries, interactive maps, travel guides, and reader comments. Optimized for fast loading with lazy image loading and CDN integration. Reader engagement increased by 150% with new design.</p>
-          
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Image Gallery</span>
-            <span class="tech-tag">Maps Integration</span>
-            <span class="tech-tag">Comments System</span>
-          </div>
-
-          <div class="project-actions">
-            <a href="#" target="_blank" class="project-btn github">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-            <a href="#" target="_blank" class="project-btn live">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Preview
-            </a>
-          </div>
-
-          <div class="project-review">
-            <div class="review-header">
-              <div class="review-author">
-                <div class="avatar" style="background:linear-gradient(135deg, #c6ff3d, #ff4dcb)">SA</div>
-                <div class="author-info">
-                  <div class="author-name">Sarah Anderson</div>
-                  <div class="author-role">Travel Blogger & Author</div>
-                </div>
-              </div>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-            </div>
-            <p class="review-text">"Mujtaba created exactly what I envisioned for my travel blog! The gallery transitions are absolutely beautiful, the layout makes my stories shine, and the interactive maps are fantastic. My readership has doubled! Highly recommend him for any creative web project."</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5: Creative Portfolio Website -->
-      <div class="project-card reveal">
-        <div class="project-image">
-          <div class="image-placeholder portfolio">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#ff4dcb;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#6d5dfc;stop-opacity:1" />
+                  <stop offset="0%" style="stop-color:#a47251;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#dcf0c3;stop-opacity:1" />
                 </linearGradient>
               </defs>
               <rect width="400" height="300" fill="#0a0d16" opacity="0.5"/>
               <g transform="translate(80, 70)">
-                <rect x="0" y="0" width="240" height="160" rx="8" fill="url(#grad5)" opacity="0.8"/>
-                <text x="120" y="90" font-size="36" font-weight="bold" fill="#05060a" text-anchor="middle" font-family="Arial">PORTFOLIO</text>
+                <rect x="0" y="0" width="240" height="160" rx="8" fill="url(#grad4)" opacity="0.8"/>
+                <text x="120" y="90" font-size="36" font-weight="bold" fill="#05060a" text-anchor="middle" font-family="Arial">✈</text>
               </g>
-              <text x="200" y="200" font-size="28" font-weight="bold" fill="#ff4dcb" text-anchor="middle" font-family="Arial">Creative Portfolio</text>
-              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Designer & Artist Showcase</text>
+              <text x="200" y="200" font-size="28" font-weight="bold" fill="#a47251" text-anchor="middle" font-family="Arial">Travel Blog</text>
+              <text x="200" y="240" font-size="14" fill="#8a90a5" text-anchor="middle" font-family="Arial">Stories & Gallery</text>
             </svg>
           </div>
         </div>
         <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Creative Portfolio Showcase</h3>
-            <span class="project-badge">Portfolio</span>
-          </div>
-          <p class="project-description">Sleek and modern portfolio website for creative professionals. Features project showcase with lightbox gallery, filtering by category, smooth page transitions, and seamless contact integration. Built to maximize visual impact and client engagement. Average visitor duration increased by 200%.</p>
-          
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Lightbox Gallery</span>
-            <span class="tech-tag">Category Filter</span>
-            <span class="tech-tag">Page Transitions</span>
-          </div>
-
           <div class="project-actions">
-            <a href="#" target="_blank" class="project-btn github">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="#" target="_blank" class="project-btn live">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Preview
+            <a href="#" target="_blank" class="project-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
-          </div>
-
-          <div class="project-review">
-            <div class="review-header">
-              <div class="review-author">
-                <div class="avatar" style="background:linear-gradient(135deg, #ff4dcb, #6d5dfc)">MR</div>
-                <div class="author-info">
-                  <div class="author-name">Marcus Rodriguez</div>
-                  <div class="author-role">Graphic Designer & Artist</div>
-                </div>
-              </div>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-            </div>
-            <p class="review-text">"Finally, a web developer who truly understands design and creativity! Mujtaba created a portfolio that makes my work look even better than it is. The gallery functionality is incredibly smooth, transitions are elegant, and clients are truly impressed. Worth every penny!"</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="view-more-container reveal">
-      <a href="#contact" class="view-more-btn">Get Started Today</a>
+<div class="section-divider">· · · 02 — Client Reviews · · ·</div>
+
+<!-- CLIENT REVIEWS SECTION -->
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <div class="section-label">Testimonials</div>
+    <h2 class="heading">What Clients Say</h2>
+    
+    <div class="reviews-slider">
+      <div class="slider-container">
+        <div class="slide active">
+          <div class="slide-content">
+            <div class="review-avatar" style="background:linear-gradient(135deg, #a47251, #dd9e59)">AS</div>
+            <div class="review-info">
+              <h4 class="reviewer-name">Abdul Samad</h4>
+              <p class="reviewer-role">Golf Course Manager</p>
+            </div>
+          </div>
+          <p class="review-quote">"The interactive golf website Mujtaba created is absolutely brilliant! The animations are smooth and captivating, the design is modern and professional. Our members love navigating it!"</p>
+          <div class="review-rating">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="review-avatar" style="background:linear-gradient(135deg, #dd9e59, #f0d8a1)">LJ</div>
+            <div class="review-info">
+              <h4 class="reviewer-name">Lajjo</h4>
+              <p class="reviewer-role">Business Owner</p>
+            </div>
+          </div>
+          <p class="review-quote">"Exceptional work! Mujtaba transformed our vision into reality. The website increased our conversions significantly. Highly professional and responsive to feedback!"</p>
+          <div class="review-rating">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="review-avatar" style="background:linear-gradient(135deg, #f0d8a1, #dcf0c3)">FA</div>
+            <div class="review-info">
+              <h4 class="reviewer-name">Farah Ahmed</h4>
+              <p class="reviewer-role">E-Commerce Entrepreneur</p>
+            </div>
+          </div>
+          <p class="review-quote">"Outstanding developer! The e-commerce platform Mujtaba built is fast, secure, and user-friendly. Our sales increased by 80% post-launch. Highly recommended!"</p>
+          <div class="review-rating">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="review-avatar" style="background:linear-gradient(135deg, #dcf0c3, #a47251)">HM</div>
+            <div class="review-info">
+              <h4 class="reviewer-name">Hassan Malik</h4>
+              <p class="reviewer-role">Creative Director</p>
+            </div>
+          </div>
+          <p class="review-quote">"Mujtaba truly understands web design and development. The portfolio website he created showcases my work beautifully. Clients are absolutely impressed!"</p>
+          <div class="review-rating">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="slider-controls">
+        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider">· · · 04 — Contact · · ·</div>
+<div class="section-divider">· · · 03 — Contact · · ·</div>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -663,7 +446,7 @@
         </a>
       </div>
 
-      <a class="big-cta" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something&body=Hi%20Mujtaba%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AProject%20type%3A%20%0ATimeline%3A%20%0ABudget%3A%20%0A%0ADetails%3A%0A%0AThanks%21">
+      <a class="big-cta" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something">
         Order Now <span style="font-family:'JetBrains Mono',monospace">→</span>
       </a>
     </div>

@@ -24,7 +24,70 @@ if (card) {
     card.style.transform = '';
   });
 }
-
+ // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+ 
+    // Toggle menu on hamburger click
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+ 
+    // Close menu when link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+ 
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav')) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+ 
+    // Smooth scroll for navigation
+    navLinks.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+ 
+    // Active link highlighting on scroll
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.style.color = 'var(--ink-dim)';
+            if (link.getAttribute('href').slice(1) === current) {
+                link.style.color = 'var(--primary)';
+            }
+        });
+    });
 // Scroll reveal animation
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
@@ -153,3 +216,37 @@ document.querySelectorAll('.image-placeholder').forEach(el => {
 });
 
 console.log('✨ Portfolio loaded successfully! All animations active.');
+
+// Client Reviews Slider
+let currentSlideIndex = 1;
+
+function changeSlide(n) {
+  showSlide(currentSlideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlide(currentSlideIndex = n);
+}
+
+function showSlide(n) {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  
+  if (n > slides.length) {
+    currentSlideIndex = 1;
+  }
+  if (n < 1) {
+    currentSlideIndex = slides.length;
+  }
+  
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  
+  slides[currentSlideIndex - 1].classList.add('active');
+  dots[currentSlideIndex - 1].classList.add('active');
+}
+
+// Auto-rotate slides every 8 seconds
+setInterval(() => {
+  changeSlide(1);
+}, 8000);
