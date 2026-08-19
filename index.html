@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Mujtaba Khan — Frontend Developer</title>
+    <title>Mohammad Mujtaba Khan — Full Stack Developer</title>
+<meta name="description" content="Mohammad Mujtaba Khan — Full Stack Developer crafting complete web experiences, from pixel-perfect interfaces to robust APIs and databases.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-spotlight" id="cursorSpotlight"></div>
+
 <!-- Ambient bg -->
 <div class="ambient"></div>
 <div class="grid-lines"></div>
@@ -129,6 +138,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="MMK-Resume.pdf" target="_blank" rel="noopener" class="nav-resume-link">Resume</a></li>
         </ul>
     </div>
 </nav>
@@ -142,26 +152,39 @@
           Available for new projects — 2026
         </div>
         <h1 class="name rise d-2">
-          Frontend<br/>
-          <span class="italic">craftsman</span> &amp; code poet.
+          Full Stack<br/>
+          <span class="italic">architect</span> &amp; code poet.
         </h1>
-        <div class="role rise d-3">Mohammad Mujtaba Khan · Web Developer</div>
+        <div class="role rise d-3">Mohammad Mujtaba Khan · Full Stack Developer</div>
 
         <div class="poem rise d-4">
           <p>I speak in <span class="accent">HTML</span>, I dream in <span class="accent">CSS</span>,</p>
           <p>JavaScript whispers — I answer yes.</p>
-          <p>Pixels align where vision meets thought,</p>
-          <p>Every fine detail meticulously wrought.</p>
-          <p>Interfaces woven like moonlight on glass —</p>
-          <p>Tell me your story; I'll build it to last.</p>
-          <div class="signoff">— M.M.K · Est. code, crafted with care</div>
+          <p>But my code doesn't stop where the browser ends,</p>
+          <p><span class="accent">Node</span> and <span class="accent">APIs</span> are my backend friends.</p>
+          <p>Databases hum where the logic resides,</p>
+          <p>From server room whispers to client-side tides.</p>
+          <p>Full stack magic, from root to the crown —</p>
+          <p>Tell me your idea; I'll build the whole town.</p>
+          <div class="signoff">— M.M.K · Est. code, crafted end-to-end</div>
         </div>
 
         <div class="cta-row rise d-5">
-          <a class="cta" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something&body=Hi%20Mujtaba%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project%20with%20you.">
+          <a class="cta magnetic" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something&body=Hi%20Mujtaba%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project%20with%20you.">
             Hire Me Now <span class="arrow">→</span>
           </a>
-          <a class="cta-ghost" href="#projects">View My Work</a>
+          <a class="cta-ghost magnetic" href="#projects">View My Work</a>
+        </div>
+
+        <div class="resume-row rise d-5">
+          <a class="resume-btn magnetic" href="MMK-Resume.pdf" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Preview CV
+          </a>
+          <a class="resume-btn resume-btn-solid magnetic" href="MMK-Resume.pdf" download="M-Mujtaba-Khan-Resume.pdf">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
         </div>
       </div>
 
@@ -171,15 +194,23 @@
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="card-icon">🚀</div>
-            <h2>Building Digital Dreams</h2>
-            <p>Transforming visions into pixel-perfect realities with modern web technologies.</p>
-            <div class="card-badge">React • Figma • Web Design</div>
+            <h2>Building Full-Stack Dreams</h2>
+            <p>Transforming visions into complete realities — pixel-perfect interfaces, powered by solid servers and smart databases underneath.</p>
+            <div class="card-badge">React • Node.js • MongoDB • REST APIs</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- TECH STACK MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>MySQL</span><span>REST&nbsp;APIs</span><span>Git&nbsp;&amp;&nbsp;GitHub</span><span>Tailwind</span><span>Figma</span>
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>MySQL</span><span>REST&nbsp;APIs</span><span>Git&nbsp;&amp;&nbsp;GitHub</span><span>Tailwind</span><span>Figma</span>
+  </div>
+</div>
 
 <div class="section-divider">· · · 01 — Projects · · ·</div>
 
@@ -213,10 +244,10 @@
         </div>
         <div class="project-content">
           <div class="project-actions">
-            <a href="https://github.com/Mujtaba262/ApexcifyTechnologys_Website.git" target="_blank" class="project-btn">
+            <a href="https://github.com/Mujtaba262/ApexcifyTechnologys_Website.git" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://stellar-gumption-c2fc28.netlify.app/" target="_blank" class="project-btn">
+            <a href="https://stellar-gumption-c2fc28.netlify.app/" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -246,10 +277,10 @@
         </div>
         <div class="project-content">
           <div class="project-actions">
-            <a href="https://github.com/Mujtaba262/Sidcup-Family-Golf.git" target="_blank" class="project-btn">
+            <a href="https://github.com/Mujtaba262/Sidcup-Family-Golf.git" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://monumental-salamander-c0fa89.netlify.app/" target="_blank" class="project-btn">
+            <a href="https://monumental-salamander-c0fa89.netlify.app/" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -283,10 +314,10 @@
         </div>
         <div class="project-content">
           <div class="project-actions">
-            <a href="https://github.com/Mujtaba262/Donation.git" target="_blank" class="project-btn">
+            <a href="https://github.com/Mujtaba262/Donation.git" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://becharityproject.netlify.app/" target="_blank" class="project-btn">
+            <a href="https://becharityproject.netlify.app/" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -316,10 +347,10 @@
         </div>
         <div class="project-content">
           <div class="project-actions">
-            <a href="https://github.com/Mujtaba262/3D-Furniture-idea.git" target="_blank" class="project-btn">
+            <a href="https://github.com/Mujtaba262/3D-Furniture-idea.git" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://mujtaba262.github.io/3D-Furniture-idea/" target="_blank" class="project-btn">
+            <a href="https://mujtaba262.github.io/3D-Furniture-idea/" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -349,10 +380,10 @@
         </div>
         <div class="project-content">
           <div class="project-actions">
-            <a href="#" target="_blank" class="project-btn">
+            <a href="#" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="#" target="_blank" class="project-btn">
+            <a href="#" target="_blank" class="project-btn magnetic">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -483,7 +514,7 @@
         </a>
       </div>
 
-      <a class="big-cta" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something">
+      <a class="big-cta magnetic" href="mailto:mk8063045@gmail.com?subject=Project%20Inquiry%20—%20Let%27s%20Build%20Something">
         Order Now <span style="font-family:'JetBrains Mono',monospace">→</span>
       </a>
     </div>
@@ -497,6 +528,8 @@
 
 <div class="noise"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
 
 </body>
